@@ -1,0 +1,34 @@
+.logo {
+    display: inline;
+    
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+    color: $title-color;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    
+    text-decoration: none;
+    &:hover {
+        color: $primery-text-color;
+    }
+    &-blue {
+        color: $acsent-color;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        &:hover {
+            color: $primery-text-color;
+        } 
+    }
+
+}

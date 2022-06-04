@@ -1,0 +1,104 @@
+.hooter {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    background-color: $button-color;
+    &-container {
+        display: flex;
+        align-items: baseline;
+    }
+    &-logo {
+        display: flex;
+        margin-bottom: 20px;
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        
+        color: $white-color;
+        &:hover, &:focus {
+            color: $primery-text-color;
+        }
+    }    
+    &-text {
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 9px;
+        
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        
+        color: $white-color;
+    }
+    &-item {
+        display: block;
+        margin-bottom: 9px;
+        &:last-child {            
+            margin-bottom: 0;                
+        }
+    }
+    &-a {
+        transition: color 250ms $timing-function;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        
+        color: rgba(255, 255, 255, 0.6);
+        &:hover,
+        &:focus {
+            color: $acsent-color;
+        }
+    } 
+    &-icon {
+        margin-left: 70px;
+    }
+    &-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        color: $white-color;
+    }
+    &-list {
+        display: flex;
+    }            
+}
+.hooter-li+.hooter-li {
+    margin-left: 10px;
+}
+.icon-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms $timing-function;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $white-color;
+    &:hover, &:focus {
+        background-color: $acsent-color;
+    }
+}
+.icon-svg {
+    width: 20px;
+    height: 20px;
+    
+    fill: $white-color;
+}
