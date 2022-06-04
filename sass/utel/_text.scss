@@ -12,6 +12,8 @@
 .p-text {
     margin-top: 0;
     margin-bottom: 0;
+    width: 100%;
+    text-align: left;
 
     font-size: 14px;
     line-height: 1.71;
@@ -19,7 +21,7 @@
 }
 .second-title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     color: $title-color;
 

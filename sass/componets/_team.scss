@@ -1,6 +1,6 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $background-color;
     @media screen and (min-width: 480px) {
             width: 480px;
@@ -22,8 +22,8 @@
                 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         
-        text-align: center;
-        @media screen and (min-width: 480px) {
+        /*text-align: center;*/
+       /* @media screen and (min-width: 480px) {
                 width: 480px;
             }
         
@@ -33,7 +33,7 @@
         
             @media screen and (min-width: 1600px) {
                 width: 1600px;
-            }
+            }*/
     }
     &-title {
         margin-top: 0;
@@ -45,6 +45,7 @@
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
+        text-align: center;
     }
     &-text {
         margin-top: 0;
@@ -53,13 +54,14 @@
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
+        text-align: center;
     }
    &-icon {
         display: flex;
         justify-content: center;
     }
     &-logo {
-        display: flex;
+       display: flex;
         justify-content: center;
         align-items: center;
         transition: background-color 250ms $timing-function, fill 250ms $timing-function, color 250ms $timing-function;
@@ -73,8 +75,9 @@
         }        
     }
     &-img {
-        /*display: block;*/
-        max-width: 270px;
+      /*display: block;*/
+       max-width: 450px;
+       height: 460px;
         margin-bottom: 30px;
     }
     &-svg {
@@ -84,13 +87,13 @@
         fill: $icon-color;
     }
 }
-.icon {
+/*.icon {
     display: flex;
-}
+}*/
 .icon+.icon {
     margin-left: 10px;
 }
-.team-photo+.team-photo {
+/*.team-photo+.team-photo {
     margin-left: 30px;
-}
+}*/
 

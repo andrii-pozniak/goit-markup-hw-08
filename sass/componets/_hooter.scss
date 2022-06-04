@@ -1,5 +1,5 @@
 .hooter {
-    display: flex;
+   /* display: flex;*/
     padding-top: 60px;
     padding-bottom: 60px;
     
@@ -23,7 +23,7 @@
         }
     }    
     &-text {
-        display: flex;
+       /* display: flex;*/
         margin-top: 0;
         margin-bottom: 9px;
         
@@ -34,13 +34,13 @@
         
         color: $white-color;
     }
-    &-item {
-        display: block;
+    /*&-item {
+       display: block;
         margin-bottom: 9px;
         &:last-child {            
-            margin-bottom: 0;                
-        }
-    }
+            margin-bottom: 0;               
+        }*/
+    
     &-a {
         transition: color 250ms $timing-function;
         font-style: normal;
@@ -55,9 +55,9 @@
             color: $acsent-color;
         }
     } 
-    &-icon {
+   /* &-icon {
         margin-left: 70px;
-    }
+    }*/
     &-title {
         margin-top: 0;
         margin-bottom: 20px;
@@ -71,17 +71,17 @@
         
         color: $white-color;
     }
-    &-list {
+   /* &-list {
         display: flex;
-    }            
+    }  */          
 }
-.hooter-li+.hooter-li {
+/*.hooter-li+.hooter-li {
     margin-left: 10px;
-}
+}*/
 .icon-logo {
-    display: flex;
+   /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     transition: background-color 250ms $timing-function;
 
     width: 44px;

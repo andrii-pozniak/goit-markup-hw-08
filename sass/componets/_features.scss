@@ -1,17 +1,18 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
    
     &-item {
-        width: 270px;      
+        width: 100%; 
+        text-align: center;     
     }  
     &-a {
-        /*display: flex;*/
-        flex-wrap: wrap;
+        display: flex;
+        /*flex-wrap: wrap;*/
         justify-content: center;
         align-items: center;
     
-        width: 270px;
+        width: 450px;
         height: 120px;
     
         margin-bottom: 30px;
@@ -21,7 +22,7 @@
     }
     &-icon {
         width: 70px;
-        height: 120px;
+        /*height: 120px;*/
         
         border: 0;
         color: $title-color;
@@ -32,6 +33,9 @@
  .features-icon:hover {
      fill: $acsent-color;
  }
-.features-item+.features-item {
-    margin-left: 30px;
+.features-item:not(:last-child) {
+    margin-bottom: 30px;
 }
+/*.features-item +.features-item {
+    margin-bottom: 30px;
+}*/

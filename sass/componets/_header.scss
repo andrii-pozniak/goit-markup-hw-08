@@ -2,6 +2,9 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border: 1px solid #ECECEC;
     background-color: $white-color;
     
@@ -25,11 +28,11 @@
     }   
 }
 .adress {
-    display: flex;
+    /*display: flex;*/
     margin: 0;
     &-li {
-        display: flex;
-        align-items: center;
+        /*display: flex;
+        align-items: center;*/
         padding-top: 32px;
         padding-bottom: 32px;
         transition: color 250ms $timing-function, fill 250ms $timing-function;
@@ -56,13 +59,12 @@
 .adress+.adress {
     margin-left: 50px;
 }
-.item {
+/*.item {
     display: inline;
 }
-
 .item+.item {
     margin-left: 50px;
-}
+}*/
 .link {
     position: relative;
     padding-top: 32px;
