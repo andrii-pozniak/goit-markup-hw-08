@@ -2,9 +2,17 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: $background-color;
-    &-container {
-        display: flex;
-    }
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width: 767px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1600px) {
+            width: 1600px;
+        }
     &-photo {
         padding-bottom: 30px;
         
@@ -15,6 +23,17 @@
         border-radius: 0px 0px 4px 4px;
         
         text-align: center;
+        @media screen and (min-width: 480px) {
+                width: 480px;
+            }
+        
+            @media screen and (min-width: 767px) {
+                width: 768px;
+            }
+        
+            @media screen and (min-width: 1600px) {
+                width: 1600px;
+            }
     }
     &-title {
         margin-top: 0;
@@ -35,7 +54,7 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
     }
-    &-icon {
+   &-icon {
         display: flex;
         justify-content: center;
     }
@@ -54,7 +73,7 @@
         }        
     }
     &-img {
-        display: block;
+        /*display: block;*/
         max-width: 270px;
         margin-bottom: 30px;
     }

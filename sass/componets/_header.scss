@@ -9,20 +9,17 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    &-container {
-        display: flex;
-        align-items: center;
-    }    
+        
 }
 .nav {
-    display: flex;
-    align-items: center;
+    /*display: flex;
+    align-items: center;*/
     &-site {
-        display: flex;
+        display: none;
         margin-left: 93px;
     }
     &-auto {
-     display: flex;
+     display: none;
      margin-left: auto;      
 
     }   

@@ -15,10 +15,10 @@
         color: $title-color;
     }
    
-    &-list {
+    /*&-list {
         display: flex;
         justify-items: center;
-    }
+    }*/
     
     &-logo {
         display: flex;
@@ -46,6 +46,6 @@
         fill: $icon-color;
     }
 }
-.customer-icon+.customer-icon {
+/*.customer-icon+.customer-icon {
     margin-left: 30px;
-}
+}*/
