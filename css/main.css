@@ -63,6 +63,10 @@ body {
   }
 }
 
+.container-adress {
+  margin-bottom: 60px;
+}
+
 .container-modal {
   position: relative;
   margin-bottom: 10px;
@@ -885,8 +889,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
-  width: 570px;
-  height: 86px;
+  /*width: 570px;
+    height: 86px;*/
 }
 
 @media screen and (min-width: 480px) {
