@@ -19,8 +19,17 @@
         background: #188CE8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+    }
+    &-header {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+       
+        border: none;
+        background-color: transparent;
     }      
 }
+
 .button-modal {
     position: absolute;
     display: flex;
