@@ -20,10 +20,7 @@
         height: 19px;
         
         color: $title-color;
-    }
-    &-site {
-        
-    }
+    }   
     &-auto {
         margin-top: 302px;
         margin-bottom: 64px;
@@ -49,7 +46,9 @@
         letter-spacing: 0.02em;
         color: $title-color;
         text-decoration: none;
-
+        &.current {
+            color: $acsent-color;
+        }
     }
     &-adress {
         margin-bottom: 32px;
