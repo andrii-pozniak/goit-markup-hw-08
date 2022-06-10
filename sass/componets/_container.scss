@@ -41,14 +41,20 @@
     }
     &-features {
         @media screen and (min-width: 480px) {
-                width: 480px;
+            display: flex;
+            flex-wrap: wrap;    
+            width: 480px;
             }
         
             @media screen and (min-width: 767px) {
+                display: flex;
+                flex-wrap: wrap;
                 width: 768px;
             }
         
             @media screen and (min-width: 1600px) {
+                display: flex;
+                flex-wrap: wrap;
                 width: 1600px;
             }
         
