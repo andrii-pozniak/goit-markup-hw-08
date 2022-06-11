@@ -29,7 +29,9 @@
             @media screen and (min-width: 1200px) {
                
                 display: flex;
-                align-items: baseline;
+                align-items: center;
+                padding-left: 215px;
+                padding-right: 215px;
                 
                
             }
@@ -117,12 +119,21 @@
     }
         
     }
-    /*&-hooter {
-        display: flex;
+    &-hooter {
+       @media screen and (min-width:767px) {
+        @include displayFlex;
         align-items: baseline;
-    }*/
+        justify-content: space-around;
+
+       }
+        
+        
+    }
     &-adress {
         margin-bottom: 60px;
+        @media screen and (min-width:767px) {
+            display: inline;
+        }
     }
     &-modal {
         position: relative;
