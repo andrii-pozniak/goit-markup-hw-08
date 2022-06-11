@@ -21,13 +21,13 @@
         border-radius: 4px;
     }
     &-header {
-        @media screen and (min-width:480px) {
+        /*@media screen and (min-width:480px) {*/
             position: absolute;
             display: inline-flex;
             /*margin: 0;*/
             padding: 0;
-            top: 23px;
-            right: 23px;
+            top: 21px;
+            right: 21px;
             border: none;
             background-color: transparent;
         
@@ -46,7 +46,7 @@
             &.is-open .icon-menu {
                 display: none;
             }
-        }
+        
         @media screen and (min-width:767px) {
             display: none;
         }

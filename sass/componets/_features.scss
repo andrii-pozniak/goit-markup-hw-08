@@ -1,60 +1,74 @@
 .features {
     @include padinAuto;
+    
+    @include padinTopBot (60px);
     @media screen and (min-width: 480px) {
-        @include padinTopBot (60px);
-        &-item {
+            width: 480px;
+            &-item {
+                @include displayFlex;
+                margin-bottom: 30px;
+                    /*width: 450px;
+                    height: 120px;*/
+                    text-align: center;
+            }
+            
+            &-a {
+                width: 450px;
+               height: 120px;
+                margin-bottom: 30px;
+            
+                background: $background-color;
+                border-radius: 4px;
+            }
+            &-icon {
+                width: 70px;
+                height: 120px;
                 
-            width: 450px;
-            text-align: center;
-        }
-        &-a {
-            width: 450px;
-            height: 120px;
-        
-            background: $background-color;
-            border-radius: 4px;
-        }
+            
+                border: 0;
+                color: $title-color;
+            }
     }
     @media screen and (min-width: 767px) {
+        width: 768px;
         &-item {
-            @include displayFlex;
-            width: 270px;
-            @include margin;
-            &:nth-child(n+3) {
-                margin-bottom: 0;
-            }
-            &:nth-child(2n+2) {
-                margin-right: 0;
-            }            
-        }
-            
-        }
-        &-a {           
-            width: 354px;
-            height: 120px;
-            margin-bottom: 30px;       
-            
-            background: $background-color;
-            border-radius: 4px;
-            
-    }
-    @media screen and (min-width: 1200px) {
+                @include displayFlex;
+                width: 354px;
+                height: 120px;
+                @include margin;
+        
+                &:nth-child(n+3) {
+                    margin-bottom: 0;
+                }
+        
+                &:nth-child(2n+2) {
+                    margin-right: 0;
+                }
+        }        
         &-a {
-            @include displayFlex;
-            width: 270px;
+            width: 354px;
             height: 120px;
         
             margin-bottom: 30px;
-        }        
+        
+            background: $background-color;
+            border-radius: 4px;       
+        }
     }
-    &-icon {
-        width: 70px;
-        height: 100%;
-        border: 0;
-        color: $title-color;
-    }  
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        &-a {
+                @include displayFlex;
+                width: 270px;
+                height: 120px;
+        
+                margin-bottom: 30px;
+            }
+        
+        
+        
+    }
 }
 .features-icon:hover {
      fill: $acsent-color;
 }
-

@@ -13,6 +13,8 @@
         width: 1600px;
     }
     &-header {
+        height: 60px;
+        @include padinTopBot (16px);
         @media screen and (min-width: 480px) {
                 
                 
@@ -47,24 +49,22 @@
             }
     }
     &-features {
+        
+        
         @media screen and (min-width: 480px) {
-              
+            
             width: 480px;
             }
         
-            @media screen and (min-width: 767px) {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 768px;
-            }
+        @media screen and (min-width: 767px) {
+            @include displayFlex;
+            width: 768px;
+        }
         
-            @media screen and (min-width: 1200px) {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 1600px;
-            }
+        @media screen and (min-width: 1200px) {
+            @include displayFlex;
+            width: 1600px;
+        }
         
       
     }
@@ -99,17 +99,14 @@
         }
     }
    &-team {
-    padding-left: 15px;
-    padding-right: 15px;
+    
         @media screen and (min-width: 480px) {
             
         width: 480px;
      }
     
      @media screen and (min-width: 767px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            @include displayFlex;
             width: 768px;
      }
     
