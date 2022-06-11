@@ -6,6 +6,7 @@ $background-color: #F5F4FA;
 $button-color: #2F303A;
 $icon-color: #AFB1B8;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$size: 24px;
 @mixin displayFlex () {
     display: flex;
     flex-wrap: wrap;
@@ -24,4 +25,13 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 @mixin padinDestop {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+@mixin padinAuto {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@mixin padinTopBot ($size) {
+    padding-top: $size;
+        padding-bottom: $size;
 }

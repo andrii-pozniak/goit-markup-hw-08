@@ -21,9 +21,41 @@
         border-radius: 4px;
     }
     &-header {
-        position: absolute;
+        @media screen and (min-width:480px) {
+            position: absolute;
+            display: inline-flex;
+            /*margin: 0;*/
+            padding: 0;
+            top: 23px;
+            right: 23px;
+            border: none;
+            background-color: transparent;
+        
+            & .icon-menu {
+                display: block;
+            }
+        
+            & .icon-cross {
+                display: none;
+            }
+        
+            &.is-open .icon-cross {
+                display: block;
+            }
+        
+            &.is-open .icon-menu {
+                display: none;
+            }
+        }
+        @media screen and (min-width:767px) {
+            display: none;
+        }
+        @media screen and (min-width:1200px) {
+            display: none;
+        }
+        /*position: absolute;
         display: inline-flex;
-        /*margin: 0;*/
+        margin: 0;
         padding: 0;
         top: 23px;
         right: 23px;
@@ -41,7 +73,7 @@
         }
         &.is-open .icon-menu {
             display: none;
-        }
+        }*/
     }
     &-menu {
         position: absolute;
@@ -77,9 +109,7 @@
 }
 
 .button-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displayFlex;
     margin-left: auto;
     margin-right: auto;
     width: 200px;

@@ -1,6 +1,6 @@
 .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include padinTopBot (60px);
+    @include padinAuto;
     background-color: $background-color;
 
     @media screen and (min-width: 480px) {
