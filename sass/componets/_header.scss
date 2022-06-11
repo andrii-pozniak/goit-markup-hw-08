@@ -1,7 +1,5 @@
 .header {
-    position: relative;
-    /*margin-left: auto;
-    margin-right: auto;*/
+    position: relative;    
     height: 60px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -24,10 +22,19 @@
     }        
 }
 .nav {
+     @media screen and (min-width: 480px) {
+        &-site {
+            display: none;
+            margin-left: 93px;
+        }    
+    @media screen and (min-width: 767px) {
+        width: 768px;
+    }    
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
+    }
     
-    &-site {
-        display: none;
-        margin-left: 93px;
+    
     }
     &-auto {
      display: none;

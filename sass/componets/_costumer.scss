@@ -1,16 +1,17 @@
 .customer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+    
     @media screen and (min-width: 480px) {
         width: 480px;
+        @include padinTablet;
     }
     
     @media screen and (min-width: 767px) {
         width: 768px;
+        @include padinTablet;
     }
     
     @media screen and (min-width: 1200px) {
+        @include padinDestop;
         width: 1600px;
     }
     &-title {
@@ -25,56 +26,49 @@
         letter-spacing: 0.03em;
         
         color: $title-color;
-    }
-  
-   
-   
+    }   
     &-list {
         @media screen and (min-width: 480px) {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                
-               
+                @include displayFlex;
         }
         
         @media screen and (min-width: 767px) {           
-                display: flex; 
-                flex-wrap: wrap;   
-                justify-content: center;          
-                
+                        
+             @include displayFlex   
         }
         @media screen and (min-width: 1200px) {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-        }
                 
+                @include displayFlex
+        }                
     }
     &-icon {
-        @media screen and (min-width: 480px) {
-        
+        @media screen and (min-width: 480px) {        
                 width: calc((100% - 60px)/2);
             }
         
-            @media screen and (min-width: 767px) {
-        
-        
-                display: flex;
+            @media screen and (min-width: 767px) {               
+                @include displayFlex;
+                @include margin;
                 width: calc((100% - 120px)/3);
-        
-            }
-        
-            @media screen and (min-width: 1200px) {
-                display: flex;
+                &:nth-child(3n+3) {
+                    margin-right: 0;
+                }
+                &:nth-child(n+4){
+                    margin-bottom: 0;
+                }
+            }        
+                @media screen and (min-width: 1200px) {                
                 width: calc((100% - 300px)/6);
+                margin-bottom: 0;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
             }
     }
     
     &-logo {
         @media screen and (min-width: 480px) {
-                flex-wrap: wrap;
-                    justify-content: center;
+                @include displayFlex;
                 width: 100%;
                 height: 100%;
                 border: 1px solid $icon-color;
@@ -93,14 +87,14 @@
         }
         
         @media screen and (min-width: 767px) {
-                flex-wrap: wrap;
-                justify-content: center;
+                @include displayFlex;
                 width: 226px;
                 height: 92px;
         }
         
         @media screen and (min-width: 1200px) {
                 width: 1600px;
+                @include displayFlex;
         }
         /*display: flex;
         
