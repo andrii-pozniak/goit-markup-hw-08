@@ -3,15 +3,15 @@
     &-label {
         display: flex;
         margin-bottom: 20px;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.2;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
     
     
-            color: $white-color;
+        color: $white-color;
     
     }
     
@@ -67,12 +67,7 @@
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             }
         }
-    /*display: flex;
-    flex-wrap: wrap;
-        
-    padding: 0;
-    width: 570px;
-    height: 86px;*/
+    
     @media screen and (min-width: 480px) {
         width: 480px;
         &-input {

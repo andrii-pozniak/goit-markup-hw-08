@@ -20,21 +20,16 @@
                 
             }
         
-            @media screen and (min-width: 767px) {
-                
-                display: flex;
-                /*align-items: baseline;*/
-            }
+        @media screen and (min-width: 767px) {                
+            display: flex;               
+        }
         
-            @media screen and (min-width: 1200px) {
-               
-                display: flex;
-                align-items: center;
-                padding-left: 215px;
-                padding-right: 215px;
-                
-               
-            }
+         @media screen and (min-width: 1200px) {               
+            display: flex;
+            align-items: center;
+            padding-left: 215px;
+            padding-right: 215px;              
+        }
         
     }
     &-hero {
@@ -54,7 +49,7 @@
         @include padinAuto;
         @media screen and (min-width: 480px) {           
             width: 480px;
-            }
+        }
         
         @media screen and (min-width: 767px) {
             @include displayFlex;
@@ -72,33 +67,33 @@
     }
     &-work {
         @media screen and (min-width: 480px) {
-                display: none;
-            }
+            display: none;
+        }
         
-            @media screen and (min-width: 767px) {
-                display: none;
-            }
+        @media screen and (min-width: 767px) {
+            display: none;
+        }
         
-            @media screen and (min-width: 1200px) {
-                display: flex;
-                justify-content: center;
-                width: 1600px;
-            }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            width: 1600px;
+        }
     }       
         
    
     &-customer {
         @include padinAuto;
         @media screen and (min-width: 480px) {
-                width: 480px;
-            }
+            width: 480px;
+        }
         
-            @media screen and (min-width: 767px) {
-                width: 768px;
-            }
+        @media screen and (min-width: 767px) {
+            width: 768px;
+        }
         
-            @media screen and (min-width: 1200px) {
-                width: 1600px;
+        @media screen and (min-width: 1200px) {
+            width: 1600px;
         }
     }
    &-team {
@@ -106,22 +101,22 @@
         @media screen and (min-width: 480px) {
             
         width: 480px;
-     }
+        }
     
-     @media screen and (min-width: 767px) {
+        @media screen and (min-width: 767px) {
            display: flex;
            flex-wrap: wrap;
-           
+
             padding: 0;
             margin: 0;
             width: 768px;
-     }
+        }
     
-     @media screen and (min-width: 1200px) {
-        display: flex;            
-        justify-content: center;
-         width: 1600px;   
-    }
+        @media screen and (min-width: 1200px) {
+            display: flex;            
+            justify-content: center;
+            width: 1600px;   
+        }
         
     }
     &-hooter {

@@ -3,80 +3,64 @@
     @include padinTopBot (60px);
    
     &-item {
+        margin-bottom: 30px;          
+        text-align: center;
+    }
+    
+    &-a {
+        @include displayFlex;
+           
+        width: 100%;
+        height: 120px;
         margin-bottom: 30px;
     
-          /* @include displayFlex;
-                    
-                        /*width: 450px;
-                        height: 120px;*/
-            text-align: center;
-        }
+        background: $background-color;
+        border-radius: 4px;
+    }
     
+    &-icon {
+        width: 70px;
+        height: 120px;
+    
+    
+        border: 0;
+        color: $title-color;
+    }
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        &-item {              
+            text-align: center;
+        }            
         &-a {
-            @include displayFlex;
-           
-            width: 100%;
+            width: 450px;
             height: 120px;
             margin-bottom: 30px;
-    
+            
             background: $background-color;
             border-radius: 4px;
         }
-    
         &-icon {
             width: 70px;
-            height: 120px;
-    
-    
+            height: 120px;                
+            
             border: 0;
             color: $title-color;
         }
-    @media screen and (min-width: 480px) {
-            width: 480px;
-            &-item {
-                
-               /* @include displayFlex;
-                margin-bottom: 30px;
-                    /*width: 450px;
-                    height: 120px;*/
-                    text-align: center;
-            }
-            
-            &-a {
-                width: 450px;
-               height: 120px;
-                margin-bottom: 30px;
-            
-                background: $background-color;
-                border-radius: 4px;
-            }
-            &-icon {
-                width: 70px;
-                height: 120px;
-                
-            
-                border: 0;
-                color: $title-color;
-            }
     }
     @media screen and (min-width: 767px) {
         width: 768px;
       
         &-item {
-        width: calc((100% - 60px)/2);
-
-               /* @include displayFlex;*/
-                /*width: 354px;
-                height: 120px;*/
-                @include margin;
+        width: calc((100% - 60px)/2);              
+            @include margin;
         
-                &:nth-child(n+3) {
-                    margin-bottom: 0;
-                }
+            &:nth-child(n+3) {
+                 margin-bottom: 0;
+            }
         
-                &:nth-child(2n+2) {
-                    margin-right: 0;
-                }
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
         }        
         &-a {
             width: 100%;
@@ -88,10 +72,7 @@
             border-radius: 4px;       
         }
     }
-    @media screen and (min-width: 1200px) {
-       
-        /*padding-top: 60px;
-        padding-bottom: 60px;*/
+    @media screen and (min-width: 1200px) {        
         width: 1600px;
         &-item {
             width: calc((100% - 120px)/4);
@@ -103,18 +84,14 @@
             height: 120px;*/
         }
         &-a {
-                @include displayFlex;
-                width: 270px;
-                height: 120px;
+            @include displayFlex;
+            width: 270px;
+            height: 120px;
         
-                margin-bottom: 30px;
-        }
-        
-        
-        
+            margin-bottom: 30px;
+        }        
     }
-
 }
 .features-icon:hover {
-     fill: $acsent-color;
+    fill: $acsent-color;
 }
