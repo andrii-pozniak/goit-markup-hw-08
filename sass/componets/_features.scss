@@ -30,8 +30,11 @@
     }
     @media screen and (min-width: 767px) {
         width: 768px;
+      
         &-item {
-                @include displayFlex;
+           
+
+               /* @include displayFlex;*/
                 /*width: 354px;
                 height: 120px;*/
                 @include margin;
@@ -55,6 +58,7 @@
         }
     }
     @media screen and (min-width: 1200px) {
+       
         /*padding-top: 60px;
         padding-bottom: 60px;*/
         width: 1600px;

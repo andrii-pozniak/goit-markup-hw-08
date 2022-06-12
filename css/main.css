@@ -97,20 +97,12 @@ body {
 
 @media screen and (min-width: 767px) {
   .container-features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container-features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 1600px;
   }
 }
@@ -964,17 +956,7 @@ body {
     width: 768px;
   }
   .features-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    /* @include displayFlex;*/
     /*width: 354px;
                 height: 120px;*/
     margin-bottom: 30px;
