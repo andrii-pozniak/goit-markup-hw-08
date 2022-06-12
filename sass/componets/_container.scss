@@ -126,6 +126,12 @@
         justify-content: space-around;
 
        }
+        @media screen and (min-width:1200px) {
+            justify-content: center;
+            flex-wrap: nowrap;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
         
         
     }
@@ -133,6 +139,10 @@
         margin-bottom: 60px;
         @media screen and (min-width:767px) {
             display: inline;
+        }
+        @media screen and (min-width:1200px) {
+            flex-direction: column;
+            margin-right: 70px;
         }
     }
     &-modal {

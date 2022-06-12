@@ -45,8 +45,7 @@
                 
                 width: calc((100% - 180px)/4);
                 height: 100%;
-                margin-bottom: 30px;
-
+               margin-bottom: 0;
                 &:not(:last-child) {
                     margin-right: 30px;
                 }          
