@@ -1,18 +1,19 @@
 .customer {
     @include padinAuto;
+    @include padinTopBot(60px);
     
     @media screen and (min-width: 480px) {
         width: 480px;
-        @include padinTablet;
+        
     }
     
     @media screen and (min-width: 767px) {
         width: 768px;
-        @include padinTablet;
+       
     }
     
     @media screen and (min-width: 1200px) {
-        @include padinDestop;
+        @include padinTopBot(94px);
         width: 1600px;
     }
     &-title {
@@ -29,6 +30,7 @@
         color: $title-color;
     }   
     &-list {
+        @include displayFlex;
         @media screen and (min-width: 480px) {
                 @include displayFlex;
         }
@@ -39,10 +41,20 @@
         }
         @media screen and (min-width: 1200px) {
                 
-                @include displayFlex
+            @include displayFlex
         }                
     }
     &-icon {
+            width: calc((100% - 60px)/2);
+            @include margin;
+        
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        
+            &:nth-child(n+5) {
+                margin-bottom: 0;
+            }
         @media screen and (min-width: 480px) {        
                 width: calc((100% - 60px)/2);
                 @include margin;

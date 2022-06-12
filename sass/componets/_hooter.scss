@@ -4,6 +4,94 @@
     @include padinTopBot (60px);
     
     background-color: $button-color;
+    &-logo {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: center;
+    
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+    
+    
+            color: $white-color;
+    
+            &:hover,
+            &:focus {
+                color: $primery-text-color;
+            }
+    }
+    
+     &-adress {
+            margin-bottom: 20px;
+    }
+    
+    &-text {
+            /* display: flex;*/
+            margin-top: 0;
+            margin-bottom: 9px;
+    
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            text-align: center;
+    
+            color: $white-color;
+    }
+    &-icon {
+            margin-bottom: 60px;
+    }
+    
+        &-item {
+            /*display: block;*/
+            margin-bottom: 8px;
+            text-align: center;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    
+        &-a {
+            transition: color 250ms $timing-function;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+    
+            color: rgba(255, 255, 255, 0.6);
+    
+            &:hover,
+            &:focus {
+                color: $acsent-color;
+            }
+        }
+    
+        &-title {
+            margin-top: 0;
+            margin-bottom: 20px;
+    
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            text-align: center;
+    
+            color: $white-color;
+        }
+    
+        &-list {
+            display: flex;
+            justify-content: center;
+        }
     @media screen and (min-width: 480px) {
         width: 480px;
     }
