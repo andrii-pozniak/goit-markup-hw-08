@@ -59,12 +59,13 @@
             }
         
         @media screen and (min-width: 767px) {
-            @include displayFlex;
+            display: flex;
+            flex-wrap: wrap;
             width: 768px;
         }
         
         @media screen and (min-width: 1200px) {
-            @include displayFlex;
+            display: flex;
             width: 1600px;
         }
         
@@ -141,8 +142,10 @@
             display: inline;
         }
         @media screen and (min-width:1200px) {
+            display: inline;
             flex-direction: column;
             margin-right: 70px;
+            margin-bottom: 0;
         }
     }
     &-modal {

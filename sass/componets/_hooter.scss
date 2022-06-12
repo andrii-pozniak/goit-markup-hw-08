@@ -12,18 +12,30 @@
         width: 768px;
     }
     
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
         width: 1600px;
         
         &-icon {
-                margin-right: 93px;
-            }
+            margin-right: 93px;
+        }
+        &-text {
+            display: flex;      
+            width: 232px;
+        }
+        &-logo {
+            justify-content: flex-start;
+        }
+        &-item {
+            display: flex;
+            justify-content: flex-start;
+        }
+
     }
    
     &-logo {
         display: flex;
         margin-bottom: 20px;
-        justify-content: center;
+        /*justify-content: center;*/
         
         font-family: 'Raleway';
         font-style: normal;

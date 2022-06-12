@@ -1,7 +1,6 @@
 .features {
     @include padinAuto;
-    
-    
+    @include padinTopBot (60px);    
     @media screen and (min-width: 480px) {
             width: 480px;
             &-item {
@@ -30,20 +29,21 @@
             }
     }
     @media screen and (min-width: 767px) {
+       
         width: 768px;
         &-item {
-                @include displayFlex;
-                width: 354px;
-                height: 120px;
-                @include margin;
+               
+                /*width: 354px;
+                height: 120px;*/
+            @include margin;
         
-                &:nth-child(n+3) {
-                    margin-bottom: 0;
-                }
+            &:nth-child(n+3) {
+                margin-bottom: 0;
+            }
         
-                &:nth-child(2n+2) {
-                    margin-right: 0;
-                }
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
         }        
         &-a {
             width: 354px;
@@ -56,12 +56,14 @@
         }
     }
     @media screen and (min-width: 1200px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        /*padding-top: 60px;
+        padding-bottom: 60px;*/
         width: 1600px;
         &-item {
-            width: 270px;
-            height: 120px;
+            
+            margin-bottom: 0;
+            /*width: 270px;
+            height: 120px;*/
         }
         &-a {
                 @include displayFlex;
@@ -69,7 +71,7 @@
                 height: 120px;
         
                 margin-bottom: 30px;
-            }
+        }
         
         
         
