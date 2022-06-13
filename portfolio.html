@@ -22,7 +22,7 @@
             <div class="container-header">
                 <nav class="nav">
                     <a href="./site.html" class="logo" lang="en"><span class="logo-blue">Web</span>Studio</a>
-                    <button type="button" class="button-header " data-menu-open>
+                    <button type="button" class="button-header is-open" data-menu-open>
                         <svg width="24" height="16">
                             <use class="icon-cross" href="./img/logo company/sprite.svg#icon-close-black"></use>
                             <use class="icon-menu" href="./img/logo company/sprite.svg#icon-menu_24px"> </use>
@@ -56,6 +56,7 @@
         </div>
     
     </header>
+  
      <main >
         <section class="page">                   
              <div class="container">   
@@ -231,8 +232,8 @@
     <!--Footer-->
 <footer class="hooter">
     <div class="container">
-        <div class="hooter-container">
-            <div>
+        <div class="container-hooter">
+            <div class="container-adress">
                 <a href="./site.html" class="hooter-logo" lang="en"><span class="logo-blue">Web</span>Studio</a>
                 <address class="hooter-adress">
                     <p class="hooter-text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -285,44 +286,97 @@
         </div>
 
     </div>
+
 </footer>
-<div class="menu is-open" data-menu>
-    <button data-menu-close class="button-menu">
-        <svg class="menu-svg">
-            <use href="./img/logo company/sprite.svg#icon-close-black"> </use>
-        </svg>
-    </button>
-    <ul class="menu-site list">
-        <li class="menu-item"> <a href="./index.html" class="menu-link ">Студия</a></li>
-        <li class="menu-item"> <a href="./portfolio.html" class="menu-link current">Портфолио</a></li>
-        <li class="menu-item"> <a href="" class="menu-link">Контакты</a></li>
-    </ul>
-    </nav>
-    <ul class="menu-auto list">
-        <li class="menu-adress">
-            <a href="tel:+380961111111" class="menu-phone">+38 (096) 111 11 11</a>
-
-        </li>
-        <li class="menu-adress">
-            <a href="info@devstudio.com" class="menu-mail">info@devstudio.com</a>
-
-        </li>
-    </ul>
-    <ul class="menu-logo list">
-        <li class="menu-icon">
-            <a href="" class="menu-text">Instagram</a>
-        </li>
-        <li class="menu-icon">
-            <a href="" class="menu-text">Twitter</a>
-        </li>
-        <li class="menu-icon">
-            <a href="" class="menu-text">Facebook</a>
-        </li>
-        <li class="menu-icon">
-            <a href="" class="menu-text">LinkedIn</a>
-        </li>
-    </ul>
-</div>
+                <div data-modal class="hero-backdrop is-hidden">
+                    <div class="modal">
+                        <button data-modal-close type="button" class="button-modal">
+                            <svg class="modal-svg">
+                                <use href="./img/logo company/sprite.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                            <form>
+                                <label class="modal-name" for="fio">Имя</label>
+                                <div class="modal-container">
+                                    <input type="text" name="fio" id="fio" class="modal-input">
+                                    <svg class="modal-card">
+                                        <use href="./img/logo company/sprite.svg#icon-person" class="svg"></use>
+                                    </svg>
+                
+                                </div>
+                
+                                <label class="modal-name" for="phone">Телефон</label>
+                                <div class="container-modal">
+                                    <input type="tel" name="tel" id="phone" class="modal-input">
+                                    <svg class="modal-card">
+                                        <use href="./img/logo company/sprite.svg#icon-phone"></use>
+                                    </svg>
+                
+                                </div>
+                
+                                <label class="modal-name" for="mail">Почта</label>
+                                <div class="modal-container">
+                                    <input type="email" name="mail" id="mail" class="modal-input">
+                                    <svg class="modal-card">
+                                        <use href="./img/logo company/sprite.svg#icon-email"></use>
+                                    </svg>
+                                </div>
+                
+                                <label class="modal-name" for="coment">Комментарий</label>
+                                <textarea name="coment" id="coment" cols="30" rows="10" class="modal-coment"
+                                    placeholder="Введите текст"></textarea>
+                
+                                <label class="checkbox-label">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="topic">
+                                    <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю <span> <a href=""
+                                            class="checkbox-item"> Условия договора</a></span>
+                                </label>
+                                <button type="submit" class="button-submit">Отправить</button>
+                
+                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu is-open" data-menu>
+                    <button data-menu-close class="button-menu">
+                        <svg class="menu-svg">
+                            <use href="./img/logo company/sprite.svg#icon-close-black"> </use>
+                        </svg>
+                    </button>
+                    <ul class="menu-site list">
+                        <li class="menu-item"> <a href="" class="menu-link current">Студия</a></li>
+                        <li class="menu-item"> <a href="./portfolio.html" class="menu-link">Портфолио</a></li>
+                        <li class="menu-item"> <a href="" class="menu-link">Контакты</a></li>
+                    </ul>
+                    </nav>
+                    <ul class="menu-auto list">
+                        <li class="menu-adress">
+                            <a href="tel:+380961111111" class="menu-phone">+38 (096) 111 11 11</a>
+                
+                        </li>
+                        <li class="menu-adress">
+                            <a href="info@devstudio.com" class="menu-mail">info@devstudio.com</a>
+                
+                        </li>
+                    </ul>
+                    <ul class="menu-logo list">
+                        <li class="menu-icon">
+                            <a href="" class="menu-text">Instagram</a>
+                        </li>
+                        <li class="menu-icon">
+                            <a href="" class="menu-text">Twitter</a>
+                        </li>
+                        <li class="menu-icon">
+                            <a href="" class="menu-text">Facebook</a>
+                        </li>
+                        <li class="menu-icon">
+                            <a href="" class="menu-text">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
 <script src="./js/menu.js"></script>
 
 </body>

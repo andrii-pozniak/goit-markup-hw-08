@@ -6,11 +6,11 @@
     @media screen and (min-width: 480px) {
             width: 480px;
     }    
-        @media screen and (min-width: 767px) {
-            width: 768px;
+    @media screen and (min-width: 767px) {
+        width: 768px;
     }    
-        @media screen and (min-width: 1200px) {
-            width: 1600px;
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
     }
     &-photo {
         margin-bottom: 30px;
@@ -24,10 +24,10 @@
         &:last-child {
             margin-bottom: 0;
         }
-            @media screen and (min-width: 480px) {
-                width: 450px;
-            }        
-            @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }        
+        @media screen and (min-width: 768px) {
                
                 width: calc((100% - 60px)/2);
                 height: 100%;
@@ -41,17 +41,17 @@
                 &:nth-child(n+3) {
                         margin-bottom: 0;
                 }
-            }        
-            @media screen and (min-width: 1200px) {
+        }        
+        @media screen and (min-width: 1200px) {
                 
-                width: calc((100% - 180px)/4);
-                height: 100%;
-               margin-bottom: 0;
-                &:not(:last-child) {
-                    margin-right: 30px;
-                }          
+            width: calc((100% - 180px)/4);
+            height: 100%;
+            margin-bottom: 0;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }          
                    
-            }       
+        }       
     }
     &-title {
         margin-top: 0;
@@ -74,7 +74,7 @@
         letter-spacing: 0.03em;
         text-align: center;
     }
-   &-icon {
+    &-icon {
         display: flex;
         justify-content: center;
     }
@@ -106,10 +106,9 @@
         }
         
         @media screen and (min-width: 1200px) {
-           /* display: flex;*/
+           
             width: 100%;
-            height: 100%;
-            
+            height: 100%;            
         }
       
     }
@@ -119,14 +118,9 @@
         fill: $icon-color;
     }
 }
-.team-photo
-/*.icon {
-    display: flex;
-}*/
+
 .icon+.icon {
     margin-left: 10px;
 }
-/*.team-photo+.team-photo {
-    margin-left: 30px;
-}*/
+
 
