@@ -114,7 +114,8 @@
         
         color: $primery-text-color;
         @media screen and (min-width:767px) {
-           
+           display: flex;
+           flex-grow: 1;
         }
         
     }
