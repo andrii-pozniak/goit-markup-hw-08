@@ -82,7 +82,8 @@
         }
     &-a {
         position: relative;
-        display: block;
+        display: flex;
+        flex-grow: 1;
         text-decoration: none;
         transition: box-shadow 250ms $timing-function;
         &:hover, &:focus {
