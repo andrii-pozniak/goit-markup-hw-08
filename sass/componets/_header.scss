@@ -11,8 +11,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     .adress {
-            margin: 0;
-    
+            margin: 0;    
             &-li {
     
                 transition: color 250ms $timing-function, fill 250ms $timing-function;
@@ -24,20 +23,16 @@
                 &:focus {
                     color: $acsent-color;
                     fill: $acsent-color;
-                }
-    
+                }    
     
             }
-        }
-    
+        }    
         .item+.item {
             margin-left: 50px;
-        }
-    
+        }    
         .link {
             position: relative;
-            padding-top: 32px;
-            padding-bottom: 32px;
+            @include padinDestop(32px);
             transition: color 250ms $timing-function;
     
             color: $title-color;
@@ -57,17 +52,14 @@
     
                 transform: scaleX(0);
                 transition: transform 250ms $timing-function;
-            }
-    
+            }    
             &:hover::after {
                 transform: scaleX(1);
-            }
-    
+            }    
             &:hover,
             &:focus {
                 color: $acsent-color;
-            }
-    
+            }    
             &.current {
                 color: $acsent-color;
             }
