@@ -83,7 +83,7 @@
     &-a {
         position: relative;
         display: flex;
-        flex-grow: 1;
+       
         text-decoration: none;
         transition: box-shadow 250ms $timing-function;
         &:hover, &:focus {
@@ -92,6 +92,12 @@
                     1px 4px 6px rgba(0, 0, 0, 0.16);
                            
         }
+            @media screen and (min-width:767px) {
+                display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    overflow: 1;
+            }
     }
     &-img {
         display: block;
@@ -114,10 +120,7 @@
         text-align: left;
         
         color: $primery-text-color;
-        @media screen and (min-width:767px) {
-           display: flex;
-           flex-grow: 1;
-        }
+        
         
     }
 }
@@ -158,12 +161,13 @@
 .text-container {
     margin-bottom: 0;
     padding: 24px 20px;
+    overflow: 1;
     border: 1px solid #EEEEEE;
     @media screen and (min-width:767px) {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        flex-grow: 1;
+        overflow: 1;
         height: 100%;
         width: 100%;
 
