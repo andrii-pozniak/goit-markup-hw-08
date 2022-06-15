@@ -48,7 +48,7 @@
         @media screen and (min-width: 767px) {
             display: flex;        
             flex-wrap: wrap;
-           
+                      
         }
     &-item {
         width: 450px;
@@ -159,13 +159,13 @@
 .text-container {
     margin-bottom: 0;
     padding: 24px 20px;
-    overflow: 1;
+   
     border: 1px solid #EEEEEE;
     @media screen and (min-width:767px) {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        overflow: 1;
+        
         height: 100%;
         width: 100%;
 
