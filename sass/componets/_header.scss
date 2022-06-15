@@ -32,7 +32,7 @@
         }    
         .link {
             position: relative;
-            @include padinDestop(32px);
+            @include padinTopBot(32px);
             transition: color 250ms $timing-function;
     
             color: $title-color;

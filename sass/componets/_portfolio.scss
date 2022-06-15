@@ -36,9 +36,7 @@
     margin-left: 8px;
 }
 
-.photo {
-
-    
+.photo {    
         margin-top: 50px;
     
         font-size: 16px;
@@ -88,19 +86,19 @@
         transition: box-shadow 250ms $timing-function;
         &:hover, &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                    0px 4px 4px rgba(0, 0, 0, 0.06),
-                    1px 4px 6px rgba(0, 0, 0, 0.16);
-                           
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
         }
-            @media screen and (min-width:767px) {
-                display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    overflow: 1;
-            }
+        @media screen and (min-width:767px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: 1;
+        }
+        
     }
     &-img {
-        display: block;
+        display: flex;
         margin-bottom: 0;
         width: 450px;
         overflow: hidden;
