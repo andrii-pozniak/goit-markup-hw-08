@@ -89,17 +89,17 @@
             justify-content: center;
         }
     @media screen and (min-width: 480px) {
-        width: 480px;
+       
     }    
         @media screen and (min-width: 767px) {
-        width: 768px;
+        
     }
     
     @media screen and (min-width: 1200px) {
-        width: 1600px;
+       
         
         &-icon {
-            margin-right: 93px;
+            /*margin-right: 93px;*/
             margin-bottom: 0;
         }
         &-text {

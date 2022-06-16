@@ -1,16 +1,19 @@
 .customer {
     @include padinAuto;
-    @include padinTopBot(60px);    
+    @include padinTopBot(60px); 
+    &-icon {
+        width: 100%;
+    }
     @media screen and (min-width: 480px) {
-        width: 480px;        
+               
     }
     
     @media screen and (min-width: 767px) {
-        width: 768px;       
+           
     }    
     @media screen and (min-width: 1200px) {
         @include padinTopBot(94px);
-        width: 1600px;
+       
     }
     &-title {
         margin-top: 0;
@@ -113,7 +116,7 @@
         }
         
         @media screen and (min-width: 1200px) {
-            width: 1600px;
+           
             @include displayFlex;
         }        
     }
