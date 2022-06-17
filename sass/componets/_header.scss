@@ -87,8 +87,10 @@
                 margin-left: 88px;                    
             }            
             &-auto {
-                display: block;
-                margin-left: auto;            
+                display: flex;
+                margin-left: auto;
+                flex-direction: column;       
+                justify-content: center;    
             }
         }
         .link {
@@ -99,8 +101,11 @@
             line-height: 1.2;
             letter-spacing: 0.02em;
         }
+        .nav-phone{
+            padding-top: 5px;
+        }
         .adress {
-            margin-bottom: 8px;
+            padding-bottom: 5px;
             
             &:last-child {
                 margin-bottom: 0;
@@ -135,8 +140,7 @@
             &-auto {
             display: flex;
             margin-left: auto;
-               
-                                         
+                                  
             }
         }
         .adress {

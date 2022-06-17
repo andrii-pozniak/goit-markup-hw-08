@@ -24,7 +24,9 @@
     color: $white-color;
     text-align: center;
     @media screen and (min-width: 480px) {
-        
+        height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;
 
     }
     
@@ -45,7 +47,10 @@
     }
     
     @media screen and (min-width: 1200px) {
-        
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 1600px;
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
@@ -72,6 +77,5 @@
         
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        text-align: center;
     }
 }

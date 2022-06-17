@@ -14,11 +14,6 @@
     }
     &-header {
         height: 60px;
-       
-        @media screen and (min-width: 480px) {
-                
-                
-            }
         
         @media screen and (min-width: 767px) {                
             display: flex;               
@@ -33,11 +28,11 @@
     }
     &-hero {
         @media screen and (min-width: 480px) {
-                width: 480px;
+                width: 100%;
             }
         
             @media screen and (min-width: 767px) {
-                width: 768px;
+                width: 100%;
             }
         
             @media screen and (min-width: 1200px) {
@@ -45,11 +40,6 @@
             }
     }
     &-features {
-        @include padinAuto;
-        @media screen and (min-width: 480px) {           
-          
-        }
-        
         @media screen and (min-width: 767px) {
             @include displayFlex;
             align-items: baseline;
@@ -80,28 +70,11 @@
         }
     }       
         
-   
     &-customer {
         @include padinAuto;
-        @media screen and (min-width: 480px) {
-            
-        }
-        
-        @media screen and (min-width: 767px) {
-            
-        }
-        
-        @media screen and (min-width: 1200px) {
-            
-        }
     }
    &-team {
         @include padinAuto;
-        @media screen and (min-width: 480px) {
-            
-       
-        }
-    
         @media screen and (min-width: 767px) {
            display: flex;
            flex-wrap: wrap;
