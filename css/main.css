@@ -1997,8 +1997,6 @@ body {
 .page {
   padding-top: 60px;
   padding-bottom: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Roboto';
@@ -2009,24 +2007,9 @@ body {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 480px) {
-  .page {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 767px) {
-  .page {
-    width: 768px;
-  }
   .page-work:not(:last-child) {
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .page {
-    width: 1600px;
   }
 }
 
@@ -2073,26 +2056,26 @@ body {
 }
 
 .photo-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  height: 100%;
+  /*display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;*/
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 767px) {
   .photo-item {
-    /*display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                height: 100%;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
     width: calc((100% - 60px)/2);
     margin-right: 30px;
   }
@@ -2120,9 +2103,6 @@ body {
 
 .photo-a {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2156,7 +2136,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
-  width: 450px;
+  width: 100%;
   overflow: hidden;
 }
 

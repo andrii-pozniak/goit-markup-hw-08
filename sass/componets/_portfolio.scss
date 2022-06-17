@@ -1,8 +1,7 @@
 .page {
     padding-top: 60px;
     padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+   
     @include padinAuto;
     
     font-family: 'Roboto';
@@ -11,16 +10,16 @@
             margin-bottom: 15px;
         }
     @media screen and (min-width: 480px) {
-        width: 480px;       
+             
     }    
     @media screen and (min-width: 767px) {
-        width: 768px;
+       
         &-work:not(:last-child){
             margin-bottom: 0;
         }
     }    
     @media screen and (min-width: 1600px) {
-        width: 1600px;
+        
     }
     &-nav {
         display: flex;
@@ -51,17 +50,17 @@
                       
         }
     &-item {
-        display: flex;
+        /*display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            height: 100%;
+            height: 100%;*/
         
         margin-bottom: 30px;
         @media screen and (min-width:767px) {
-            /*display: flex;
+            display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-                height: 100%;*/
+                height: 100%;
             
             width: calc((100% - 60px)/2);
             
@@ -89,7 +88,7 @@
         }
     &-a {
         position: relative;
-        display: flex;
+        
        
         text-decoration: none;
         transition: box-shadow 250ms $timing-function;
@@ -110,7 +109,7 @@
     &-img {
         display: flex;
         margin-bottom: 0;
-        width: 450px;
+        width: 100%;
         overflow: hidden;
         @media screen and (min-width:767px) {
             width: 100%;
