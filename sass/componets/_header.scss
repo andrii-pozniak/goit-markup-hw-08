@@ -102,10 +102,11 @@
             letter-spacing: 0.02em;
         }
         .nav-phone{
-            padding-top: 5px;
+            padding-bottom: 21px;
         }
         .adress {
-            padding-bottom: 5px;
+            padding-top: 21px;
+            margin-bottom: 10px;
             
             &:last-child {
                 margin-bottom: 0;
@@ -119,6 +120,7 @@
             }
             &-li {
                 display: flex;
+                
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 1.2;
@@ -129,19 +131,20 @@
         }
     }
     
-    @media screen and (min-width: 1200px) {
-       
-        height: 80px;
-        
+    @media screen and (min-width: 1200px) {               
         .nav {
             &-site {                   
                  margin-left: 93px;
             }
             &-auto {
             display: flex;
+            flex-direction: row;
             margin-left: auto;
                                   
             }
+        }
+        .nav-phone {
+        @include padinTopBot (32px);
         }
         .adress {
             margin-bottom: 0;
@@ -151,8 +154,10 @@
             font-size: 14px;
             line-height: 1.2;
             letter-spacing: 0.02em;
+            @include padinTopBot (32px);
             &:last-child {
                 margin-right: 0;
+           
             }
             &-svg {
                 width: 16px;
