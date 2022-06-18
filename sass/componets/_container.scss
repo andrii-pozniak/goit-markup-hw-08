@@ -108,15 +108,17 @@
         }       
     }
     &-adress {
+        margin-bottom: 60px;
         
         @media screen and (min-width:1200px) {
                 display: inline;
                 flex-direction: column;
                 
-                margin-bottom: 0;
+               
             }
         @media screen and (min-width:767px) {
             display: inline;
+            margin-bottom: 0;
         }
         
     }

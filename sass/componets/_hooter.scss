@@ -43,9 +43,9 @@
     
             color: $white-color;
     }
-   /* &-icon {
+    &-icon {
         margin-bottom: 60px;
-    } */   
+    }  
     &-item {            
         margin-bottom: 8px;
         text-align: center;
@@ -108,13 +108,26 @@
             display: flex;
             justify-content: center;
         }
-   
+        @media screen and (min-width: 767px) { 
+        
+            &-icon {
+           
+            margin-bottom: 0;
+            }
+            &-maile {
+                margin-top: 60px;
+            }
+        }    
     
     @media screen and (min-width: 1200px) { 
         
         &-icon {
             margin-left: 70px;
-            margin-bottom: 0;
+            
+        }
+        &-maile {
+            margin-top: 0;
+            margin-left: 93px;
         }
         &-text {
             display: flex;      

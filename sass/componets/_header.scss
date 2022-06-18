@@ -61,8 +61,14 @@
                 color: $acsent-color;
             }    
             &.current {
-                color: $acsent-color;
-            }
+                color: $acsent-color;             
+                
+            
+                width: 78px;
+                height: 4px;
+                border: 2px;
+            }           
+        
         }
     .nav {
         display: flex;        
