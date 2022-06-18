@@ -20,7 +20,7 @@
         <div class="container-header">
             <nav class="nav">
                 <a href="./site.html" class="logo" lang="en"><span class="logo-blue">Web</span>Studio</a>
-                <button type="button" class="button-header is-open" data-menu-open>
+                <button type="button" class="menu-toggle js-is-open" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
                     <svg width="24" height="16" >
                         <use class="icon-cross" href="./img/logo company/sprite.svg#icon-close-black"></use>
                         <use class="icon-menu" href="./img/logo company/sprite.svg#icon-menu_24px"> </use>
@@ -343,15 +343,17 @@
                         </li>
                     </ul>
                 </div>
-                <form class="form">
-                    <label for="link" class="form-label">Подпишитесь на рассылку</label>
-                    <input class="form-input" type="email" name="link" id="link" placeholder="E-mail">
-                    <button class="form-btn" type="submit">Подписаться <svg class="form-svg">
-                            <use href="./img/logo company/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
-        
-                </form>
+                <div>
+                    <p class="hooter-signature">Подпишитесь на рассылку</p>
+                    <form class="form">                      
+                        <input class="form-input" type="email" name="link" id="link" placeholder="E-mail">
+                        <button class="form-btn" type="submit">Подписаться <svg class="form-svg">
+                                <use href="./img/logo company/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    
+                    </form>
+                </div>
             </div>
         
         </div>
@@ -409,45 +411,48 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu is-open" data-menu>
+                    <div class="menu-container js-menu-container" id="mobile-menu">
                         <button data-menu-close class="button-menu">
                             <svg class="menu-svg">
                                 <use href="./img/logo company/sprite.svg#icon-close-black"> </use>
                             </svg>
                         </button>
-                        <ul class="menu-site list">
-                            <li class="menu-item"> <a href="" class="menu-link current">Студия</a></li>
-                            <li class="menu-item"> <a href="./portfolio.html" class="menu-link">Портфолио</a></li>
-                            <li class="menu-item"> <a href="" class="menu-link">Контакты</a></li>
-                        </ul>
-                        
-                        <ul class="menu-auto list">
-                            <li class="menu-adress">
-                                <a href="tel:+380961111111" class="menu-phone">+38 (096) 111 11 11</a>
-                                
-                            </li>
-                            <li class="menu-adress">
-                                <a href="info@devstudio.com" class="menu-mail">info@devstudio.com</a>
-                                
-                            </li>
-                        </ul>
-                        <ul class="menu-logo list">
-                            <li class="menu-icon">
-                                <a href="" class="menu-text">Instagram</a>
-                            </li>
-                            <li class="menu-icon">
-                                <a href="" class="menu-text">Twitter</a>
-                            </li>
-                            <li class="menu-icon">
-                                <a href="" class="menu-text">Facebook</a>
-                            </li>
-                            <li class="menu-icon">
-                                <a href="" class="menu-text">LinkedIn</a>
-                            </li>
-                        </ul>
+                        <div class="mobile-menu">
+                            <ul class="menu-site list">
+                                <li class="menu-item"> <a href="" class="menu-link current">Студия</a></li>
+                                <li class="menu-item"> <a href="./portfolio.html" class="menu-link">Портфолио</a></li>
+                                <li class="menu-item"> <a href="" class="menu-link">Контакты</a></li>
+                            </ul>
+                            
+                            <ul class="menu-auto list">
+                                <li class="menu-adress">
+                                    <a href="tel:+380961111111" class="menu-phone">+38 (096) 111 11 11</a>
+                            
+                                </li>
+                                <li class="menu-adress">
+                                    <a href="info@devstudio.com" class="menu-mail">info@devstudio.com</a>
+                            
+                                </li>
+                            </ul>
+                            <ul class="menu-logo list">
+                                <li class="menu-icon">
+                                    <a href="" class="menu-text">Instagram</a>
+                                </li>
+                                <li class="menu-icon">
+                                    <a href="" class="menu-text">Twitter</a>
+                                </li>
+                                <li class="menu-icon">
+                                    <a href="" class="menu-text">Facebook</a>
+                                </li>
+                                <li class="menu-icon">
+                                    <a href="" class="menu-text">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
     <script src="./js/modal.js"></script> 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/menu.js"></script>   
 </body>
 </html>

@@ -1,20 +1,4 @@
-.form {
-   
-    &-label {
-        display: flex;
-        margin-bottom: 20px;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-    
-    
-        color: $white-color;
-    
-    }
-    
+.form {   
         &-input {
             width: 100%;
             height: 50px;
@@ -74,8 +58,7 @@
                 width: 450px;
                 height: 50px;
         }
-    }
-    
+    }    
     @media screen and (min-width: 767px) {
         
         display: flex;
@@ -98,7 +81,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         width: 570px;
-        height: 50px;
+       
         &-label {
             display: flex;
             /*margin-right: 90px;*/

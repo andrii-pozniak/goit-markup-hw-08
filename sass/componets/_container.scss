@@ -43,6 +43,7 @@
         @media screen and (min-width: 767px) {
             @include displayFlex;
             align-items: baseline;
+            margin: -15px;
            
         }
         
@@ -79,9 +80,10 @@
         @media screen and (min-width: 767px) {
            display: flex;
            flex-wrap: wrap;
+           margin: -15px;
 
             padding: 0;
-            margin: 0;
+          
             
         }
     
@@ -103,25 +105,33 @@
             justify-content: center;
             flex-wrap: nowrap;
            
-        }
-        
-        
+        }       
     }
     &-adress {
-        margin-bottom: 60px;
+        
+        @media screen and (min-width:1200px) {
+                display: inline;
+                flex-direction: column;
+                
+                margin-bottom: 0;
+            }
         @media screen and (min-width:767px) {
             display: inline;
         }
-        @media screen and (min-width:1200px) {
-            display: inline;
-            flex-direction: column;
-            margin-right: 70px;
-            margin-bottom: 0;
-        }
+        
     }
     &-modal {
         position: relative;
         margin-bottom: 10px;
     }
-
+    &-form {
+        @include padinAuto;
+        margin-top: 60px;
+        @media screen and (min-width:767px) {
+            margin-left: auto;
+        }
+        @media screen and (min-width:1200px) {
+            margin-top: 0;
+        }
+    }
 }
