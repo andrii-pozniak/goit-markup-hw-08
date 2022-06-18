@@ -121,6 +121,13 @@
      right: 21px;
      border: none;
      background-color: transparent;
+    &:hover,
+        &:focus {
+            fill: $acsent-color;
+        }
+    &.is-open:hover, &.is-open:focus {
+        fill: $acsent-color;
+    }
 
      & .icon-menu {
          display: block;
@@ -145,6 +152,7 @@
      @media screen and (min-width:1200px) {
          display: none;
      }
+     
 
  }
 

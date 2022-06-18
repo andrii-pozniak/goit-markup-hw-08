@@ -830,6 +830,14 @@ body {
   background-color: transparent;
 }
 
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: #2196F3;
+}
+
+.menu-toggle.is-open:hover, .menu-toggle.is-open:focus {
+  fill: #2196F3;
+}
+
 .menu-toggle .icon-menu {
   display: block;
 }
