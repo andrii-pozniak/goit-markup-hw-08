@@ -284,8 +284,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  /*justify-content: space-around;*/
   height: 100vh;
 }
 
@@ -405,7 +404,12 @@ body {
   letter-spacing: 0.02em;
   color: #2196F3;
   padding-right: 10px;
-  position: relative;
+}
+
+.menu-site {
+  -webkit-box-flex: 0.8;
+      -ms-flex-positive: 0.8;
+          flex-grow: 0.8;
 }
 
 @media screen and (min-width: 767px) {

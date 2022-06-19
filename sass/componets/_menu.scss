@@ -17,7 +17,7 @@
 .mobile-menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     height: 100vh;
   
 }
@@ -131,12 +131,11 @@
         text-decoration: none;       
         letter-spacing: 0.02em;
         color: $acsent-color;
-        padding-right: 10px;
+        padding-right: 10px;    
         
-        position: relative;
-
-       
-          
+    }
+    &-site {
+        flex-grow: 0.8;
     }
                  
     @media screen and (min-width: 767px) {
@@ -146,6 +145,9 @@
     @media screen and (min-width: 1200px) {
         display: none;
     }
+}
+.one {
+    
 }
 /*.menu-icon + .menu-icon {
     border-left: 1px solid rgba(33, 33, 33, 0.2);
