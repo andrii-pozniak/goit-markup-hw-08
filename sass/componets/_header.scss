@@ -61,6 +61,8 @@
                 color: $acsent-color;
             }    
             &.current {
+                position: relative;
+                text-decoration: none;
                 color: $acsent-color;
                 &::after {
                         content: "";
