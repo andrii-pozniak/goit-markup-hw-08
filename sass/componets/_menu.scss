@@ -104,7 +104,7 @@
     }
     &-logo {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         /*padding-right: 10px;
         &:not(:last-child) {
             border-right: 1px solid rgba(33, 33, 33, 0.2);*/
@@ -112,10 +112,12 @@
         }
     
     &-icon {
-        
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-left: 10px;
         &:last-child {
             margin-right: 0;
-            
+            border-right: 0;
+           
         }
     }
     &-text {
@@ -130,24 +132,13 @@
         letter-spacing: 0.02em;
         color: $acsent-color;
         padding-right: 10px;
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        
         position: relative;
-        
-            &::after {
-                position: absolute;
-                display: inline-block;
-                
-               
-            }
-        
-        &:nth-child(n + 2) {
-            border-right: 0px;
-        }
-    }
-       
-        
-    
 
+       
+          
+    }
+                 
     @media screen and (min-width: 767px) {
         display: none;
     }
@@ -156,4 +147,8 @@
         display: none;
     }
 }
+/*.menu-icon + .menu-icon {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
+}*/
  
