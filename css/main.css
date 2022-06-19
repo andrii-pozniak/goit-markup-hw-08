@@ -488,6 +488,17 @@ body {
   color: #2196F3;
 }
 
+.header .link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border: 2px;
+  background-color: #2196F3;
+}
+
 .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
