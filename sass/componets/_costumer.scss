@@ -27,6 +27,8 @@
         }
     }   
     &-list {
+        margin: -15px;
+        
         @include displayFlex;
         @media screen and (min-width: 480px) {
              @include displayFlex;
@@ -34,7 +36,7 @@
         
         @media screen and (min-width: 767px) {                        
              @include displayFlex;
-             margin: -15px;   
+               
         }
         @media screen and (min-width: 1200px) {                
             @include displayFlex
@@ -60,25 +62,22 @@
     }
     
     &-logo {
-        @media screen and (min-width: 480px) {
-            @include displayFlex;
-            width: 100%;
-            height: 100%;
+        height: 92px;
+        @include displayFlex;
+        
             border: 1px solid $icon-color;
             box-sizing: border-box;
             border-radius: 4px;
-                
+        
             &:hover,
             &:focus {
                 border: 1px solid $acsent-color;
             }
-                
+        
             &:hover .customer-svg,
             &:focus .customer-svg {
                 fill: $acsent-color;
-            }
-        }
-        
+            }       
         @media screen and (min-width: 767px) {
             @include displayFlex;
             width: 226px;

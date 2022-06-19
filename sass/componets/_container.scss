@@ -40,17 +40,19 @@
             }
     }
     &-features {
+       
         @media screen and (min-width: 767px) {
             @include displayFlex;
             align-items: baseline;
             margin: -15px;
+            
            
         }
         
         @media screen and (min-width: 1200px) {
            display: flex;
            flex-wrap: nowrap;
-           margin: -15px;
+           
             
         }
         
@@ -77,6 +79,8 @@
     }
    &-team {
         @include padinAuto;
+        margin-top: 0;
+        margin-bottom: 0;
         @media screen and (min-width: 767px) {
            display: flex;
            flex-wrap: wrap;

@@ -106,7 +106,7 @@
 
 .overlay {
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     &-text {
         position: absolute;
         
@@ -118,7 +118,7 @@
         top: 0;
         left: 0;
         
-        transform: translateY(100%);
+        transform: translateY(101%);
         transition: transform 250ms $timing-function;
         
         font-weight: 400;
@@ -143,9 +143,7 @@
    
     border: 1px solid #EEEEEE;
     @media screen and (min-width:767px) {
-        flex-grow: 1;        
-       
-        width: 100%;
+        flex-grow: 1;         
     }
 }
 .title {

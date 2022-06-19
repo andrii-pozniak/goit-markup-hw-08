@@ -23,12 +23,14 @@
     padding: 40px;
     
     transform: translate(-50%, -50%);
-    
-    width: 528px;
-    height: 581px;
-    
+    width: 96vw;
+    height: 581px;    
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    @media screen and (min-width: 528px) {
+            max-width: 528px;
+            max-height: 581px;
+        }
     border-radius: 4px;
     &-title {
         margin-top: 0;
@@ -86,7 +88,7 @@
     }
     &-coment {
         resize: none;
-        width: 448px;
+        width: 100%;
         height: 120px;
         font-weight: 400;
         
@@ -106,45 +108,16 @@
         &:hover, &:focus {
             border-color: $acsent-color;
             color: $title-color;
+
+        }
+        @media screen and (min-width: 528px) {
+            width: 448px;
+            height: 120px;
         }
     }
 }
 
 
-/*.button-modal {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    top: 8px;
-    right: 8px;
-    border-radius: 50%;
-    transition: background-color 250ms $timing-function;
-
-    background: $white-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
-    &:hover,
-    &:focus {
-        fill: $acsent-color;
-    }
-}
-.button-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 50px;
-    border: 0;
-
-    background-color: $acsent-color;
-    color: $white-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}*/
 .checkbox {
     position: absolute;
     width: 1px;
@@ -157,6 +130,7 @@
     overflow: hidden;
     &-label {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
@@ -176,6 +150,7 @@
         border: 2px solid $title-color;
         border-radius: 2px;
     }
+    
     &-item {
         color: $acsent-color;
     }
