@@ -113,14 +113,13 @@
     
     &-icon {
         
-        
         &:last-child {
             margin-right: 0;
             
         }
     }
     &-text {
-        position: relative;
+        
         margin-right: 20px;
         font-family: 'Roboto';
         font-style: normal;
@@ -131,11 +130,15 @@
         letter-spacing: 0.02em;
         color: $acsent-color;
         padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        position: relative;
         
-        &::after {
-            position: absolute;
-            border: 1px solid rgba(33, 33, 33, 0.2);
-        }
+            &::after {
+                position: absolute;
+                display: inline-block;
+                
+               
+            }
         
         &:nth-child(n + 2) {
             border-right: 0px;
