@@ -108,10 +108,12 @@
                 display: flex;
                 margin-left: auto;
                 flex-direction: column;       
-                justify-content: center;    
+                justify-content: center;
+                    
             }
         }
         .link {
+           
             @include padinTopBot (32px);
             width: 49px;
             height: 16px;
@@ -148,7 +150,8 @@
             }
         
         }
-        .item {
+        .item { 
+                     
             padding: 0;
         }
     }
@@ -156,15 +159,18 @@
     @media screen and (min-width: 1200px) {               
         .nav {
             &-site {                   
-                 margin-left: 93px;
+                margin-left: 93px;
             }
             &-auto {
             display: flex;
             flex-direction: row;
+            margin: 0;
             margin-left: auto;
+           
                                   
             }
         }
+       
         .nav-phone {
         @include padinTopBot (32px);
         }

@@ -67,23 +67,26 @@
         }
     }
     @media screen and (min-width: 1200px) {        
-        
+        @include padinTopBot (94px);
         &-item {
             width: calc((100% - 120px) / 4);
           
           
             }
            
-        }
+        
         &-a {
             @include displayFlex;
             width: 100%;
             height: 120px;
         
             margin-bottom: 30px;
-        }        
-    
+        } 
+        
+    }
 }
+    
+
 .features-icon:hover {
     fill: $acsent-color;
 }
