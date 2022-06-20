@@ -1,6 +1,5 @@
 .page {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    @include padinTopBot (60px);
    
     @include padinAuto;
     
@@ -17,16 +16,20 @@
         }
     }    
     @media screen and (min-width: 1200px) {
-        
+       @include padinTopBot (94px) 
     }
     &-nav {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         
         @media screen and (min-width: 767px) {            
             justify-content: center;
             align-items: center;
+            margin-bottom: 30px;
+         }
+         @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
          }      
     }       
 }
@@ -106,9 +109,10 @@
 
 .overlay {
     position: relative;
-    overflow: scroll;
+    overflow: hidden;
     &-text {
         position: absolute;
+        overflow: scroll;
         
         width: 100%;
         height: 100%;

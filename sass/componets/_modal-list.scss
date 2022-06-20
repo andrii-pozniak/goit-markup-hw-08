@@ -37,11 +37,19 @@
         margin-bottom: 12px;
         
         font-weight: 700;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
         color: $title-color;
+        @media screen and (min-width: 475px) {
+        font-size: 20px;
+            line-height: 1.15;
+        }
+
+    }
+    &-container {
+        position: relative;
     }
     &-name {
         display: flex;
@@ -55,10 +63,12 @@
         color: $primery-text-color;
     }
        
+       
     &-input {
         width: 100%;
         height: 40px;
         padding-left: 42px;
+       
         outline: transparent;
         transition: border 250ms $timing-function;
         
@@ -76,8 +86,34 @@
     &-card {
         position: absolute;
         display: flex;
-        top: 14px;
-        left: 15px;
+        top: 25%;
+        left: 14px;
+    
+        width: 18px;
+        height: 18px;
+        border: 2px black;
+        transition: fill 250ms $timing-function;
+    
+        fill: $title-color;
+    }
+    &-cardName {
+    position: absolute;
+        display: flex;
+        top: 25%;
+        left: 17%;
+    
+        width: 18px;
+        height: 18px;
+        border: 2px black;
+        transition: fill 250ms $timing-function;
+    
+        fill: $title-color;
+    }
+    &-cardPost {
+    position: absolute;
+        display: flex;
+        top: 47%;
+        left: 17%;
     
         width: 18px;
         height: 18px;
@@ -135,11 +171,23 @@
         align-items: center;
         margin-bottom: 20px;
         
-        font-size: 14px;
-        line-height: 1.71px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.17;          
+        
         letter-spacing: 0.03em;
         
         color: $primery-text-color;
+        @media screen and (min-width: 475px) {
+            font-size: 12px;
+            line-height: 1.17px;
+            letter-spacing: 0.03em;
+        }        
+        @media screen and (min-width: 767px) {
+        font-size: 14px;
+        line-height: 1.71px;
+        letter-spacing: 0.03em;
+        }
     }
     &-icon {
         display: flex;
@@ -149,11 +197,15 @@
         
         border: 2px solid $title-color;
         border-radius: 2px;
+        @media screen and (min-width: 475px){
+            
+        }
     }
     
     &-item {
         color: $acsent-color;
-    }
+    }       
+
 }
 .modal-input:focus+.modal-card {
     fill: $acsent-color;

@@ -21,8 +21,8 @@
 .mobile-menu {
     display: flex;
     flex-direction: column;
-   
-    height: 100vh;
+   justify-content: space-between;
+    height: 100%;
   
 }
 .menu {
@@ -51,14 +51,11 @@
         
     }
     &-item {
-        margin-bottom: 32px;
-        width: 139px;
-        height: 48px;
-        left: 40px;
-        top: 48px;      
-    
-        color: $acsent-color;
-        
+        &:not(:last-child) {
+            margin-bottom: 32px
+        }
+      
+        color: $acsent-color;       
        
     }
     &-link {
@@ -113,20 +110,17 @@
     }
     &-logo {
         display: flex;
-        justify-content: center;
+        
+       
         margin: 0;
-        width: 100vw;
-        /*flex-wrap: wrap;*/
-        /*padding-right: 10px;
-        &:not(:last-child) {
-            border-right: 1px solid rgba(33, 33, 33, 0.2);*/
-        @media screen and (max-width: 450px) {
-            flex-wrap: wrap;
-           
-        }
+        @media screen and (max-width: 400px) {
+                justify-content: center;
+            }
+      
         }
     
     &-icon {
+        display: block;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
         
 
@@ -135,17 +129,14 @@
             border-right: 0;
            
         }
-        @media screen and (max-width: 450px) {
-            padding-bottom: 10px;
-           
-        }
+        
     }
     &-icon +  &-icon {
         padding-left: 10px;
     }
     &-text {
         
-        margin-right: 20px;
+       
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -155,16 +146,15 @@
         letter-spacing: 0.02em;
         color: $acsent-color;
         padding-right: 10px;
-        @media screen and (max-width: 450px) {
-               margin-right: 0;
-        
+        @media screen and (max-width: 400px) {
+            margin-right: 0;
+            
+            font-size: 14px;
+            line-height: 1.2;
             }
         
     }
-    &-site {
-        flex-grow: 0.8;
-    }
-                 
+            
     @media screen and (min-width: 767px) {
         display: none;
     }
@@ -172,4 +162,7 @@
     @media screen and (min-width: 1200px) {
         display: none;
     }
+}
+.one {
+    margin-top: auto;
 }
