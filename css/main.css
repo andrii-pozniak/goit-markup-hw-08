@@ -1957,17 +1957,24 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 96vw;
-  height: 581px;
+  height: 609px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-@media screen and (min-width: 528px) {
+@media screen and (min-width: 480px) {
   .modal {
-    max-width: 528px;
-    max-height: 581px;
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -2042,36 +2049,6 @@ body {
   fill: #212121;
 }
 
-.modal-cardName {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 25%;
-  left: 17%;
-  width: 18px;
-  height: 18px;
-  border: 2px black;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #212121;
-}
-
-.modal-cardPost {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 47%;
-  left: 17%;
-  width: 18px;
-  height: 18px;
-  border: 2px black;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #212121;
-}
-
 .modal-coment {
   resize: none;
   width: 100%;
@@ -2094,7 +2071,7 @@ body {
   color: #212121;
 }
 
-@media screen and (min-width: 528px) {
+@media screen and (min-width: 1200px) {
   .modal-coment {
     width: 448px;
     height: 120px;
@@ -2138,14 +2115,6 @@ body {
   .checkbox-label {
     font-size: 12px;
     line-height: 1.17px;
-    letter-spacing: 0.03em;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .checkbox-label {
-    font-size: 14px;
-    line-height: 1.71px;
     letter-spacing: 0.03em;
   }
 }
