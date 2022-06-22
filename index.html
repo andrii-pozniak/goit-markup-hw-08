@@ -136,7 +136,16 @@
             <h2 class="second-title">Наша команда</h2>
                 <ul class="container-team list">
                     <li class="team-photo">
-                        <img src="./img/team1.jpg" class="team-img" alt="Product Designer" >
+                        <picture>
+                            <source media="(mid-width: 1200px)" srcset="./img/team1/img1_lg.jpg 1x, ./img/team1/img1_lg@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(mim-width: 767px)" srcset="./img/team1/img1_md.jpg 1x, ./img/team1/img1_md@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="./img/team1/img1_sm.jpg 1x, ./img/team1/img1_sm@2x.jpg 2x, 100vw"
+                                type="image/jpg" />
+                        <img src="./img/team1/img1_sm.jpg" class="team-img" alt="Product Designer" >
+                        </picture>
+                        
                         <h3 class="team-title">Игорь Демьяненко</h3>
                         <p class="team-text" lang="en">Product Designer</p>
                         <ul class="team-icon list">
